@@ -1,0 +1,39 @@
+{
+    "config": {
+      "target": "http://localhost:8000", 
+      "phases": [
+        {
+          "duration": 40, 
+          "arrivalRate": 10000 
+        }
+      ]
+    },
+    "scenarios": [
+      {
+        "flow": [
+          {
+            "post": {
+              "url": "/ingest",
+              "json": {
+                "level": "info",
+                "message": "Test log message",
+                "resourceId": "resource-123",
+                "timestamp": "2023-01-01T00:00:00Z",
+                "traceId": "trace-456",
+                "spanId": "span-789",
+                "commit": "commitId",
+                "metadata": {
+                  "parentResourceId": "parent-101"
+                }
+              },
+              "headers": {
+                "Content-Type": "application/json"
+                
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

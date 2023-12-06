@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "this is the backend for a log ingestion service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Himanshu Barak",
+  "license": "ISC",
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.10.0",
+    "artillery": "^2.0.2",
+    "aws-sdk": "^2.1499.0",
+    "bullmq": "^4.15.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "ioredis": "^5.3.2",
+    "nodemon": "^3.0.1"
+  }
+}
